@@ -57,6 +57,10 @@ body {
   background-color: var(--primary-color);
   color: #fff;
 }
+.btn-secondary {
+  background-color: var(--text-color);
+  color: #fff;
+}
 
 h1 {
   color: var(--text-color);
@@ -65,6 +69,14 @@ h1 {
   font-size: 36px;
   font-weight: 600;
 }
+
+h4 {
+  font-weight: bolder;
+  font-size: 18px;
+  color: #222;
+  padding-bottom: 0.5rem;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -75,19 +87,54 @@ p {
   gap: 10px;
 }
 
-.grid-3 {
+.grid-4 {
   grid-template-columns: 2fr 2fr 2fr 1fr !important;
 }
 
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.section-padding {
+  padding-top: 140px;
+}
+
+.card {
+  width: 350px;
+  height: 250px;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.card:hover{
+  box-shadow: 3px 3px 18px #ccc;
+  background-color: #fff;
+  border-radius: 3px;
+ 
+}
+
+.card-2{
+  width: 250px;
+  height: 150px;
+  background-color: #f9f9f9;  
+}
 /* color */
+
 .color-primary {
   background-color: var(--primary-color);
 }
+
 /* Margin & Padding */
 .py-3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 /* Navbar */
 .navbar {
   padding: 30px 0;
@@ -154,7 +201,8 @@ p {
   line-height: 1.5;
 }
 
-.showcase a {
+.showcase a,
+.feature-area a {
   color: #222;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
@@ -162,12 +210,37 @@ p {
   font-weight: 600;
 }
 
-.showcase a:hover {
+.showcase a:hover,
+.feature-area a:hover {
   cursor: pointer;
   color: #ff9902;
 }
 
 /* Search area */
+.search-area {
+  margin-top: -50px;
+  position: relative;
+}
+
 .search-area .p-40 {
   padding: 40px;
+}
+
+.search-area input {
+  width: 270px;
+  height: 60px;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  outline: none;
+  font-family: "Open Sans";
+}
+
+/* feature-area section */
+.feature-area p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 16px;
+  font-family: "Open Sans";
 }
